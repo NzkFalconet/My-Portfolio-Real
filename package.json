@@ -1,0 +1,25 @@
+{
+  "name": "my-portfolio",
+  "version": "1.0.0",
+  "description": "https://nzkfalconet.github.io/My-Portfolio/",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NzkFalconet/My-Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NzkFalconet/My-Portfolio/issues"
+  },
+  "homepage": "https://github.com/NzkFalconet/My-Portfolio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "https": "^1.0.0",
+    "request": "^2.88.2"
+  }
+}

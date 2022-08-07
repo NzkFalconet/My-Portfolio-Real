@@ -1,204 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>My Website</title>
-</head>
-<style>
-  #hero {
-	background-image: url("Image/anime-boy.jpg");
-	background-size: cover;
-	background-position: top center;
-	position: relative;
-	z-index: 1;
-}
-</style>
-<body>
-  <!-- Header -->
-  <section id="header">
-    <div class="header container">
-      <div class="nav-bar"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Public/css/style.css" />
+    <link rel="scss" href="./Public/css/progress.scss" />
+    <title>Najmuzzama Khan</title>
+  </head>
+  <style>
+    #hero {
+      /* background-image: url("http://neilpatelportfolio.com/images/slide_1.jpg"); */
+      background-image: linear-gradient(45deg, transparent 0%, black 100%),
+        url("http://neilpatelportfolio.com/images/slide_1.jpg");
+
+      background-size: cover;
+      background-position: top center;
+      /*position: relative; */
+      z-index: 1;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+  </style>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero"
+              ><h1><span>N</span>ajmuzzama <span>K</span>han</h1></a
+            >
+          </div>
+          <div class="nav-list">
+            <div class="hamburger"><div class="bar"></div></div>
+            <ul>
+              <li><a href="#about" data-after="Home">About</a></li>
+              <li><a href="#skills" data-after="Service">Skills</a></li>
+              <li><a href="#projects" data-after="Projects">Projects</a></li>
+              <li><a  href="https://drive.google.com/file/d/1ZsL1TsvqbUATxOvGzKVm-N2vNfG8t2B1" download>Resume</a></li>
+              <li><a href="#footer" >Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Hello, <span></span></h1>
+          <h1>My Name is <span></span></h1>
+          <h1>Najmuzzama <span></span></h1>
+          <a href="#about" type="button" class="cta">Portfolio</a>
+        </div>
+      </div>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./Public/img/img-2.png" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">About <span>me</span></h1>
+          <h2 class="about-pos">Full Stack Web Developer</h2>
+          <!-- <p>Hi. I’m Najmuzzama Khan, nice to meet you. Please take a look around!
+          I am passionate about building excellent Front end web pages that improves the lives of those around me. I specialize in creating good UI for clients ranging from individuals and small-businesses all the way to large enterprise corporations.</p> -->
+          <p class="about-desc">
+            My name is Najmuzzama Khan. I'm a B.Tech student at Jaypee Institute
+            Of Information Technology, Noida in Computer Science Department. I
+            was born and raised in Uttar-Pradesh. I'm a developer, geek and
+            curious human having good problem solving skills. I am a tech
+            enthusiast who tries to gain more and more technical skills and
+            experience and apply them in the real world.
+          </p>
+          <a
+            href="https://drive.google.com/file/d/1ZsL1TsvqbUATxOvGzKVm-N2vNfG8t2B1"
+            class="cta"
+            download
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1>Skills</h1>
+      <div class="wrap-circles">
+        <div class="skills-left">
+          <div class="circle-div">
+            <div class="circle per-85">
+              <div class="inner">C++</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-60">
+              <div class="inner">React</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-40">
+              <div class="inner">Angular</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-60">
+              <div class="inner">Nodejs</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-50">
+              <div class="inner">MongoDB</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-70">
+              <div class="inner">Javascript</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-right">
+          <div class="circle-div">
+            <div class="circle per-90">
+              <div class="inner">HTML</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-90">
+              <div class="inner">Bootstrap</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-75">
+              <div class="inner">GitHub</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-75">
+              <div class="inner">VS Code</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-40">
+              <div class="inner">AWS(EC2, S3)</div>
+            </div>
+          </div>
+          <div class="circle-div">
+            <div class="circle per-65">
+              <div class="inner">Heroku</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title">Recent <span>Projects</span></h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <h1>The Grind Geeks</h1>
+              <h2>Project 1</h2>
+              <p>
+                We Provided A Platform For The Developers All Over The World To
+                Ask Their Questions And Provide Their Own Knowledge By Answering
+                The Questions On The Site. Created The Frontend Using Html, CSS,
+                JavaScript, Bootstrap and Backend Using Node.js, and
+                Express.js.!
+              </p>
+              <p>
+                <a href="https://sleepy-beyond-92271.herokuapp.com/"
+                  >Hosted Project</a
+                >
+              </p>
+              <p>
+                <a href="https://github.com/NzkFalconet/The-Grind-Geeks"
+                  >Github Repo</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./Public/img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Drum Kit JavaScript</h1>
+              <h2>Project 2</h2>
+              <p>
+                I made this drum kit using HTML CSS and vannila JavaScript .
+                Here I used event listeners to handle the keypress and click
+                through keyboard and mouse and used that event listeners to
+                target the function . In function I used different sounds for
+                different keywords.!
+              </p>
+              <p>
+                <a href="https://nzkfalconet.github.io/Drum-Kit-JavaScript/"
+                  >Hosted Project</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./Public/img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Website for financial Company</h1>
+              <h2>Project 3</h2>
+              <p>
+                this website is made for a company named transferwise.com.It's
+                simpily made of html css & javaScript.
+              </p>
+              <p>
+                <a href="https://nzkfalconet.github.io/Website-for-Company/"
+                  >Hosted Project</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./Public/img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Website for Hotel & Flight booking</h1>
+              <h2>Project 4</h2>
+              <p>
+                have made this website for a Hotel. I have used Html ,Css &
+                javaScript in it.!
+              </p>
+              <p>
+                <a
+                  href="https://nzkfalconet.github.io/Full-Website-for-Hotels-and-Flights-/"
+                  >Hosted Project</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./Public/img/img-1.png" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <h1>Website for Wedding</h1>
+              <h2>Project 5</h2>
+              <p>
+                I have made this Wedding website for a couple. I have used Html
+                ,Css & javaScript in it!
+              </p>
+              <p>
+                <a href="https://nzkfalconet.github.io/Wedding-Website/"
+                  >Hosted Project</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./Public/img/img-1.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Contact Section -->
+    <section id="news">
+      <div class="news-title">
+        <h1>Subscribe</h1>
+        <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+      </div>
+      <div class="subscribe-form">
+        <form action="https://damp-bayou-13689.herokuapp.com/" method="get">
+            <input type="text" placeholder="Email Address">
+            <button><i class="fab fa-telegram-plane"></i></button>
+        </form>
+      
+    </div>
+    </section>
+     <!-- End Contact Section -->
+
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
         <div class="brand">
-          <a href="#hero"><h1><span>N</span>ajmuzzama <span>K</span>han</h1></a>
+          <h1><span>N</span>ajmuzzama <span>K</span>han</h1>
         </div>
-        <div class="nav-list">
-          <div class="hamburger"><div class="bar"></div></div>
-          <ul>
-            <li><a href="#hero" data-after="Home">Home</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projects</a></li>
-            <li><a href="#about" data-after="About">About</a></li>
-            <li><a href="contact.html" data-after="Contact">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Header -->
 
+        <div class="social-icon">
+          <div class="social-item">
+            <a href="https://www.facebook.com/profile.php?id=100010698900629"
+              ><img
+                src="https://img.icons8.com/bubbles/344/facebook-circled.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://www.instagram.com/shaan_khannn/"
+              ><img
+                src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"
+            /></a>
+          </div>
+          <div class="social-item">
+            <a href="https://twitter.com/Shaan__Khan"
+              ><img
+                src="https://img.icons8.com/bubbles/344/twitter-circled.png"
+            /></a>
+          </div>
+        </div>
+        <p>Copyright © 2022 Najmuzzama Khan. All rights reserved</p>
+      </div>
+    </section>
+    <!-- End Footer -->
 
-  <!-- Hero Section  -->
-  <section id="hero" >
-    <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>Najmuzzama <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
-      </div>
-    </div>
-  </section>
-  <!-- End Hero Section  -->
-
-  <!-- Service Section -->
-  <section id="services">
-    <div class="services container">
-      <div class="service-top">
-        <h1 class="section-title">Front<span>End </span>Web Services</h1>
-       
-     
-      </div>
-      <div class="service-bottom">
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Responsive</h2>
-          <p>My layouts will work on any device, big or small.As the user switches from their laptop to iPad, the website really should automatically switch to accommodate for resolution, image size , text  size and scripting  abilities.I'll focus on the responsivness of website !</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Fast</h2>
-          <p>Fast load times and lag free interaction, my highest priority.Lightning-fast page load speed amplifies visitor engagement, retention, and boosts sales. Instantaneous website response leads to higher conversion rates!</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Intuitive</h2>
-          <p>Strong preference for easy to use, intuitive UX/UI.At the most basic level, the user interface (UI) is the series of screens, pages, and visual elements—like buttons and icons—that enable a person to interact with a product or service.I'll make a clean & clear UI!</p>
-        </div>
-        <div class="service-item">
-          <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png"/></div>
-          <h2>Dynamic</h2>
-          <p>Websites don't have to be static, I love making pages come to life.Dynamic websites contain Web pages that are generated in real-time. These pages include Web scripting code, such as PHP or ASP. I'll make my website dynamic & will try to run it in real time!</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Service Section -->
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
-        <h1 class="section-title">Recent <span>Projects</span></h1>
-      </div>
-      <div class="all-projects">
-        <div class="project-item">
-          <div class="project-info">
-            <h1>The Simon Game</h1>
-            <h2>Project 1</h2>
-            <p>I made this simon game using javascript framework "JQuery" here i used HTML and CSS for Front-end and used javascript for functionality.!</p>
-           <p> <a href="https://nzkfalconet.github.io/The-Simon-Game/">Hosted Project</a></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Drum Kit JavaScript</h1>
-            <h2>Project 2</h2>
-            <p>I made this drum kit using HTML CSS and vannila JavaScript . Here I used event listeners to handle the keypress and click through keyboard and mouse and used that event listeners to target the function . In function I used different sounds for different keywords.!</p>
-            <p> <a href="https://nzkfalconet.github.io/Drum-Kit-JavaScript/">Hosted Project</a></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Website for financial Company</h1>
-            <h2>Project 3</h2>
-            <p>this website is made for a company named transferwise.com.It's simpily made of html css & javaScript.</p>
-            <p><a href="https://nzkfalconet.github.io/Website-for-Company/">Hosted Project</a></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Website for Hotel & Flight booking</h1>
-            <h2>Project 4</h2>
-            <p> have made this website for a Hotel. I have used Html ,Css & javaScript in it.!</p>
-            <p><a href="https://nzkfalconet.github.io/Full-Website-for-Hotels-and-Flights-/">Hosted Project</a></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Website for Wedding</h1>
-            <h2>Project 5</h2>
-            <p>I have made this Wedding website for a couple. I have used Html ,Css & javaScript in it!</p>
-            <p><a href="https://nzkfalconet.github.io/Wedding-Website/">Hosted Project</a></p>
-          </div>
-          <div class="project-img">
-            <img src="./img/img-1.png" alt="img">
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- End Projects Section -->
-
-  <!-- About Section -->
-  <section id="about">
-    <div class="about container">
-      <div class="col-left">
-        <div class="about-img">
-          <img src="./img/img-2.png" alt="img">
-        </div>
-      </div>
-      <div class="col-right">
-        <h1 class="section-title">About <span>me</span></h1>
-        <h2>Front End Developer</h2>
-        <p>Hi. I’m Najmuzzama Khan, nice to meet you. Please take a look around!
-          I am passionate about building excellent Front end web pages that improves the lives of those around me. I specialize in creating good UI for clients ranging from individuals and small-businesses all the way to large enterprise corporations.</p>
-        <a href="#" class="cta">Download Resume</a>
-      </div>
-    </div>
-  </section>
-  <!-- End About Section -->
-
-  <!-- Contact Section -->
-  
-  <!-- End Contact Section -->
-
-  <!-- Footer -->
-  <section id="footer">
-    <div class="footer container">
-      <div class="brand"><h1><span>N</span>ajmuzzama <span>K</span>han</h1></div>
-   
-      <div class="social-icon">
-        <div class="social-item">
-          <a href="https://www.facebook.com/profile.php?id=100010698900629"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://www.instagram.com/shaan_khannn/"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png"/></a>
-        </div>
-        <div class="social-item">
-          <a href="https://twitter.com/Shaan__Khan"><img src="https://img.icons8.com/bubbles/100/000000/twitter.png"/></a>
-        </div>
-        
-      </div>
-      <p>Copyright © 2021 Najmuzzama Khan. All rights reserved</p>
-    </div>
-  </section>
-  <!-- End Footer -->
-  <script src="js/app.js"></script>
-  <script src="./server.js"></script> -->
-
-</body>
+    <script src="Public/js/app.js"></script>
+    <script src="Public/server.js"></script>
+    -->
+  </body>
 </html>

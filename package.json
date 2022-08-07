@@ -21,5 +21,8 @@
     "express": "^4.17.1",
     "https": "^1.0.0",
     "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "prettier": "2.7.1"
   }
 }
